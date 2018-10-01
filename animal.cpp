@@ -18,6 +18,10 @@ void Animal::printAddress() {
     address->printInfo();
 }
 
+Address* Animal::getAddress() {
+    return address;
+}
+
 Animal::~Animal() {
     delete address;
     cout << "Bye Bye: " << name << endl;

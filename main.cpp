@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "animal.h"
+#include "address.h"
 
 
 
@@ -21,4 +22,5 @@ int main(int argc, char **argv) {
     mary2->printAddress();
     delete mary2;
     cout << "Hello Class: " << endl;
+    Address *marryAddress = mary2->getAddress();
 }
